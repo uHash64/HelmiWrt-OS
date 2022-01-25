@@ -124,7 +124,7 @@ jobs:
         run: |
           cd $OPENWRTROOT
           git config --global credential.helper store
-          git clone https://${{ env.REPO_OWNER }}:${{ secrets.HELMIWRT_RW }}@github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}-Plus.git filex
+          https://github.com/helmiau/helmiwrt-packages.git filex
           rm -rf filex/{README.md,LICENSE,runbashing.sh}
           cp -r filex/* package/base-files/files/
           rm -rf filex
